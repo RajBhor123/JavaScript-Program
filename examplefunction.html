@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //function with no arguments and return value
+        function add()
+        {
+            var a=3,b=3,ans;
+            ans=a+b;
+            document.write("Addition of Two Numbers :"+ans);
+        }
+
+        //Function with arguments and return value 
+        function add1(a,b)
+        {
+            var ans;
+            ans=a+b;
+            return ans;
+        }
+        function result(){
+            var result=add1(10,5);
+            document.write("Addition of Numbers : "+result);
+        }
+
+        //Anonymous Function
+        let addition=function(s,t)
+        {
+            var ans;
+            ans=s+t;
+            document.write("Addition of Numbers : "+ans);
+            return ans;
+        }
+
+        //Arrow Function
+        let hello= ()=>{document.write("hello from arrow function"); return "HELLO WORLD"}; 
+
+    </script>
+    <h1>Functions with Onclick events </h1>
+    <button onclick="add()">ADD</button>
+    <button onclick="result()">ADD using the with parameters and return value</button>
+    <button onclick="addition(20,30)">ADD using Anonymous Function</button>
+    <button onclick="hello()">Add using Arrow Function</button>
+</body>
+</html>
