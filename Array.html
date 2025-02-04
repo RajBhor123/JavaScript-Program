@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = new Array();
+        a[0]="apple";
+        a[1]="banana";
+        a[2]="chiku";
+
+        for(let i=0;i<a.length;i++)
+        {
+            document.writeln(a[i]);
+        }
+
+        var b = ['lemon','orange','mango'];
+
+        var c = a.concat(b);
+
+        var d=[1,2,3];
+        
+
+        var e=d.splice(3,0,16,18);
+
+
+        document.write(d);
+
+        // document.write(c.push('kiwi'));
+
+        for(let i=0;i<c.length;i++)
+        {
+              document.writeln(c[i]);
+        }
+
+        function Emp(id,name,salary)
+        {
+             this.id = id;
+             this.name = name;
+             this.salary = salary;
+        }
+
+        var e = new Emp(1,"parachi",6999);
+
+        document.writeln(e.id);
+        document.writeln(e.name);
+        document.writeln(e.salary);
+
+        document.writeln(Math.abs(-4));
+        document.writeln(Math.round(7.8));
+        document.writeln(Math.floor(5.4));
+        document.writeln(Math.ceil(7.55));
+        document.writeln(Math.sqrt(8));
+        document.writeln(Math.random());
+        document.writeln(Math.round(5.5));
+        document.writeln(Math.pow(3,2));
+    </script>
+</body>
+</html>

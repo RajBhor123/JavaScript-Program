@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function additem()
+    {
+    const first = document.createElement('li');
+    var a = prompt("which item u want to add ?")
+    const second = document.createTextNode(a);
+    first.appendChild(second);
+
+    const thrid = document.getElementById("demo");
+    thrid.appendChild(first);
+    }
+</script>
+<ul id="demo">
+    <li>Tea</li>
+    <li>Coffee</li>
+
+</ul>
+<button onclick="additem()">Add Item</button>
+</body>
+</html>
