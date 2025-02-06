@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function display()
+        {
+            document.getElementById('demo').src="Calculator.png";
+            const collection=document.getElementsByClassName('democlass');
+            collection[0].style.background="yellow";
+        }
+
+    </script>
+
+    <div class="democlass" style="width: 200px; height: 200px; background-color: aqua;">Hello from Div 1</div>
+
+    <div class="democlass" style="width: 200px; height: 200px; background-color: chocolate;"> Hello from Div 2</div>
+    <img src="herobg1.jpg" id="demo" style="width: 200px; height: 200px;">
+    <button name="display" onclick="display()">Display</button>    
+</body>
+</html>

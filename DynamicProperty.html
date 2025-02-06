@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        //Dynamic Property
+        function display()
+        {
+            const dynamickey='name';
+            const myobj={[dynamickey]:'Raj','designation':'IT.TRAiner'};
+            document.write(myobj.name);
+        }
+
+        //ShortHand Property
+        function display1()
+        {
+            const name='Aftab';
+            const designation='IT.Trainer';
+            const myobj={name,designation};
+            document.write(myobj.name);
+
+        }
+    </script>
+
+    <button name="display" onclick="display()">Display Dynamic Property</button>
+    <button name="display" onclick="display1()">Display ShortHand Property</button>
+</body>
+</html>

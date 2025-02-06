@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Destruction of Array</h1>
+    <button onclick="Destruct()" >Destruction</button>
+    <script>
+        
+        function Destruct()
+        {
+            const abc=['Apple','Banana','Chiku','Mango','Grapes'];
+
+            //Spliting the Array abc into a,b,c array using Rest OPerator
+            let[a,b,...c]=abc;
+            document.writeln("A :",a);
+            document.writeln("B :",b);
+            document.writeln("C :",c);
+
+            //Destruction of the Array and Swapping the A values into B and B value into A
+            [a,b]=[b,a];
+
+            document.writeln(" Swapping Value of A :",a);
+            document.writeln(" Swapping Value of B :",b);
+
+        }
+        let fruits = ["Apple", "Banana", "Chiku", "Mango"];
+
+        let[l, m, ...n] = fruits;
+
+        [fruits[0], fruits[1]] = [fruits[1], fruits[0]]
+
+        console.log(l);
+        console.log(m);
+        console.log(fruits);
+    </script>
+        
+</body>
+</html>
