@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function merge()
+            {
+            var first = document.getElementById("fn").value;
+            var last = document.getElementById("lst").value;
+            var fullname = first+" "+last;
+            document.getElementById("demo").innerHTML = "Full Name :"+fullname;
+            }
+    </script>
+    <h1>Merge the Name </h1>
+    First Name :<input type="text" id="fn"><br><br>
+    Last Name :<input type="text" id="lst"><br><br>
+    <button onclick="merge()"> Merge </button>
+    <p id="demo"></p>
+</body>
+</html>

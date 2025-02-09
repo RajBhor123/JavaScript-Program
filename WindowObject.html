@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add()
+        {
+            var a = prompt("Please Enter the first value");
+            var b = prompt("Please Enter the second value"); 
+            var ans=parseInt(a)+parseInt(b);
+            alert("Answer of the Number :"+ans);
+            var c= confirm("Is The Answer Correct");
+            if(c==true)
+            {
+                alert("answer is correct");
+            }
+            else
+            {
+                alert("answer is incorrect");
+            }
+
+        
+        }
+    </script>
+     
+     <button onclick="add()">Addition of the Numbers</button>
+</body>
+</html>
